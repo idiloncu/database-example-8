@@ -1,0 +1,11 @@
+Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+UPDATE employee
+SET name = 'idil',
+email='oncuidil',
+birthday= '2002-11-28'
+WHERE id =11
+RETURNING *;
+ 
+ Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+DELETE FROM employee
+WHERE id=10;
